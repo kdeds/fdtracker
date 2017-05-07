@@ -1,3 +1,287 @@
 app:
     resource: '@AppBundle/Controller/'
     type: annotation
+
+# Create
+cat_create:
+    path:     /cat/create
+    methods: [POST]
+    defaults:
+      _controller: AppBundle:Entity:createEntity
+      entityType: 'Cat'
+
+entry_create:
+    path:     /entry/create
+    methods: [POST]
+    defaults:
+      _controller: AppBundle:Entity:createEntity
+      entityType: 'Entry'
+
+entry_type_create:
+    path:     /entry-type/create
+    methods: [POST]
+    defaults:
+      _controller: AppBundle:Entity:createEntity
+      entityType: 'EntryType'
+
+glucose_create:
+    path:     /glucose-entry/create
+    methods: [POST]
+    defaults:
+      _controller: AppBundle:Entity:createEntity
+      entityType: 'GlucoseEntry'
+
+insulin_create:
+    path:     /insulin/create
+    methods: [POST]
+    defaults:
+      _controller: AppBundle:Entity:createEntity
+      entityType: 'Insulin'
+
+ketone_create:
+    path:     /ketone-entry/create
+    methods: [POST]
+    defaults:
+      _controller: AppBundle:Entity:createEntity
+      entityType: 'KetoneEntry'
+
+medication_create:
+    path:     /medication-entry/create
+    methods: [POST]
+    defaults:
+      _controller: AppBundle:Entity:createEntity
+      entityType: 'MedicationEntry'
+
+meter_create:
+    path:     /meter/create
+    methods: [POST]
+    defaults:
+      _controller: AppBundle:Entity:createEntity
+      entityType: 'Meter'
+
+shot_create:
+    path:     /shot-entry/create
+    methods: [POST]
+    defaults:
+      _controller: AppBundle:Entity:createEntity
+      entityType: 'ShotEntry'
+
+user_create:
+    path:     /user/create
+    methods: [POST]
+    defaults:
+      _controller: AppBundle:Entity:createEntity
+      entityType: 'User'
+
+# Load
+cat_load:
+    path:     /cat/load/{entityId}
+    methods: [GET]
+    defaults:
+      _controller: AppBundle:Entity:loadEntity
+      entityType: 'Cat'
+
+entry_load:
+    path:     /entry/load/{entityId}
+    methods: [GET]
+    defaults:
+      _controller: AppBundle:Entity:loadEntity
+      entityType: 'Entry'
+
+entry_type_load:
+    path:     /entry-type/load/{entityId}
+    methods: [GET]
+    defaults:
+      _controller: AppBundle:Entity:loadEntity
+      entityType: 'EntryType'
+
+glucose_load:
+    path:     /glucose-entry/load/{entityId}
+    methods: [GET]
+    defaults:
+      _controller: AppBundle:Entity:loadEntity
+      entityType: 'GlucoseEntry'
+
+insulin_load:
+    path:     /insulin/load
+    methods: [GET]
+    defaults:
+      _controller: AppBundle:Entity:loadEntity
+      entityType: 'Insulin'
+
+ketone_load:
+    path:     /ketone-entry/load/{entityId}
+    methods: [GET]
+    defaults:
+      _controller: AppBundle:Entity:loadEntity
+      entityType: 'KetoneEntry'
+
+medication_load:
+    path:     /medication-entry/load/{entityId}
+    methods: [GET]
+    defaults:
+      _controller: AppBundle:Entity:loadEntity
+      entityType: 'MedicationEntry'
+
+meter_load:
+    path:     /meter/load
+    methods: [GET]
+    defaults:
+      _controller: AppBundle:Entity:loadEntity
+      entityType: 'Meter'
+
+shot_load:
+    path:     /shot-entry/load/{entityId}
+    methods: [GET]
+    defaults:
+      _controller: AppBundle:Entity:loadEntity
+      entityType: 'ShotEntry'
+
+user_load:
+    path:     /user/load/{entityId}
+    methods: [GET]
+    defaults:
+      _controller: AppBundle:Entity:loadEntity
+      entityType: 'User'
+
+# Update
+cat_update:
+    path:     /cat/update/{entityId}
+    methods: [PUT]
+    defaults:
+      _controller: AppBundle:Entity:updateEntity
+      entityType: 'Cat'
+
+entry_update:
+    path:     /entry/update/{entityId}
+    methods: [PUT]
+    defaults:
+      _controller: AppBundle:Entity:updateEntity
+      entityType: 'Entry'
+
+entry_type_update:
+    path:     /entry-type/update/{entityId}
+    methods: [PUT]
+    defaults:
+      _controller: AppBundle:Entity:updateEntity
+      entityType: 'EntryType'
+
+glucose_update:
+    path:     /glucose-entry/update/{entityId}
+    methods: [PUT]
+    defaults:
+      _controller: AppBundle:Entity:updateEntity
+      entityType: 'GlucoseEntry'
+
+insulin_update:
+    path:     /insulin/update
+    methods: [PUT]
+    defaults:
+      _controller: AppBundle:Entity:updateEntity
+      entityType: 'Insulin'
+
+ketone_update:
+    path:     /ketone-entry/update/{entityId}
+    methods: [PUT]
+    defaults:
+      _controller: AppBundle:Entity:updateEntity
+      entityType: 'KetoneEntry'
+
+medication_update:
+    path:     /medication-entry/update/{entityId}
+    methods: [PUT]
+    defaults:
+      _controller: AppBundle:Entity:updateEntity
+      entityType: 'MedicationEntry'
+
+meter_update:
+    path:     /meter/update
+    methods: [PUT]
+    defaults:
+      _controller: AppBundle:Entity:updateEntity
+      entityType: 'Meter'
+
+shot_update:
+    path:     /shot-entry/update/{entityId}
+    methods: [PUT]
+    defaults:
+      _controller: AppBundle:Entity:updateEntity
+      entityType: 'ShotEntry'
+
+user_update:
+    path:     /user/update/{entityId}
+    methods: [PUT]
+    defaults:
+      _controller: AppBundle:Entity:updateEntity
+      entityType: 'User'
+
+# Delete
+cat_delete:
+    path:     /cat/delete/{entityId}
+    methods: [DELETE]
+    defaults:
+      _controller: AppBundle:Entity:deleteEntity
+      entityType: 'Cat'
+
+entry_delete:
+    path:     /entry/delete/{entityId}
+    methods: [DELETE]
+    defaults:
+      _controller: AppBundle:Entity:deleteEntity
+      entityType: 'Entry'
+
+entry_type_delete:
+    path:     /entry-type/delete/{entityId}
+    methods: [DELETE]
+    defaults:
+      _controller: AppBundle:Entity:deleteEntity
+      entityType: 'EntryType'
+
+glucose_delete:
+    path:     /glucose-entry/delete/{entityId}
+    methods: [DELETE]
+    defaults:
+      _controller: AppBundle:Entity:deleteEntity
+      entityType: 'GlucoseEntry'
+
+insulin_delete:
+    path:     /insulin/delete/{entityId}
+    methods: [DELETE]
+    defaults:
+      _controller: AppBundle:Entity:deleteEntity
+      entityType: 'Insulin'
+
+ketone_delete:
+    path:     /ketone-entry/delete/{entityId}
+    methods: [DELETE]
+    defaults:
+      _controller: AppBundle:Entity:deleteEntity
+      entityType: 'KetoneEntry'
+
+medication_delete:
+    path:     /medication-entry/delete/{entityId}
+    methods: [DELETE]
+    defaults:
+      _controller: AppBundle:Entity:deleteEntity
+      entityType: 'MedicationEntry'
+
+meter_delete:
+    path:     /meter/delete/{entityId}
+    methods: [DELETE]
+    defaults:
+      _controller: AppBundle:Entity:deleteEntity
+      entityType: 'Meter'
+
+shot_delete:
+    path:     /shot-entry/delete/{entityId}
+    methods: [DELETE]
+    defaults:
+      _controller: AppBundle:Entity:deleteEntity
+      entityType: 'ShotEntry'
+
+user_delete:
+    path:     /user/delete/{entityId}
+    methods: [DELETE]
+    defaults:
+      _controller: AppBundle:Entity:deleteEntity
+      entityType: 'User'
